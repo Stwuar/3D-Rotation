@@ -30,3 +30,36 @@
     body {
         position: relative;
     }
+    .box {
+        width: 100%;
+        height: 100vh;
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    a {
+        text-decoration: none;
+        font-size: 3rem;
+        color: #f7f9fa;
+        padding: 2rem;
+        transition: all .5s;
+        position: relative;
+        perspective: 30rem;
+    }
+    
+     a::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 4.2rem;
+        left: 0;
+        background: #e6036d34;
+        border-radius: 1.5rem;
+        transform: rotateX(80deg);
+        z-index: 2;
+    }
